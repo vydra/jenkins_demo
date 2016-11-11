@@ -1,0 +1,67 @@
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Nov 11, 2016 8:36:59 PM Main deleteWinstoneTempContents
+WARNING: Failed to delete the temporary Winstone file /tmp/winstone/jenkins.war
+Nov 11, 2016 8:36:59 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Logging initialized @503ms
+Nov 11, 2016 8:36:59 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Nov 11, 2016 8:37:01 PM org.eclipse.jetty.util.log.JavaUtilLog warn
+WARNING: Empty contextPath
+Nov 11, 2016 8:37:01 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: jetty-9.2.z-SNAPSHOT
+Nov 11, 2016 8:37:02 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Nov 11, 2016 8:37:02 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started w.@62435e70{/,file:/var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+Nov 11, 2016 8:37:02 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started ServerConnector@51e8e6e6{HTTP/1.1}{0.0.0.0:8080}
+Nov 11, 2016 8:37:02 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started @3355ms
+Nov 11, 2016 8:37:02 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+Nov 11, 2016 8:37:02 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Nov 11, 2016 8:37:03 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Nov 11, 2016 8:37:03 PM jenkins.bouncycastle.api.SecurityProviderInitializer addSecurityProvider
+INFO: Initializing Bouncy Castle security provider.
+Nov 11, 2016 8:37:03 PM jenkins.bouncycastle.api.SecurityProviderInitializer addSecurityProvider
+INFO: Bouncy Castle security provider initialized.
+Nov 11, 2016 8:37:07 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Nov 11, 2016 8:37:07 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Nov 11, 2016 8:37:08 PM hudson.ExtensionFinder$GuiceFinder$FaultTolerantScope$1 error
+INFO: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+Nov 11, 2016 8:37:08 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Nov 11, 2016 8:37:08 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Nov 11, 2016 8:37:08 PM jenkins.util.groovy.GroovyHookScript execute
+INFO: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+Nov 11, 2016 8:37:08 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Nov 11, 2016 8:37:08 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 7 ms
+Nov 11, 2016 8:37:09 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 44728
+Nov 11, 2016 8:37:09 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Nov 11, 2016 8:37:09 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@41ace69b: display name [Root WebApplicationContext]; startup date [Fri Nov 11 20:37:09 UTC 2016]; root of context hierarchy
+Nov 11, 2016 8:37:09 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@41ace69b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6c5ee6c5
+Nov 11, 2016 8:37:09 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c5ee6c5: defining beans [authenticationManager]; root of factory hierarchy
+Nov 11, 2016 8:37:09 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@7b250c4b: display name [Root WebApplicationContext]; startup date [Fri Nov 11 20:37:09 UTC 2016]; root of context hierarchy
+Nov 11, 2016 8:37:09 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@7b250c4b]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5fa50fc
+Nov 11, 2016 8:37:09 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5fa50fc: defining beans [filter,legacy]; root of factory hierarchy
+Nov 11, 2016 8:37:10 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+--> setting agent port for jnlp
+--> setting agent port for jnlp... done

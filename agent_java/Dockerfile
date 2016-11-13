@@ -49,16 +49,15 @@ RUN curl --create-dirs -sSLo /usr/share/jenkins/slave.jar http://repo.jenkins-ci
   && chmod 755 /usr/share/jenkins \
   && chmod 644 /usr/share/jenkins/slave.jar 
 
-VOLUME /home/jenkins
+#VOLUME /home/jenkins
 WORKDIR /home/jenkins
 
 # cache popular java dependencies
-ENV TEMP_DEPS=/tmp/deps
-RUN mkdir -p $TEMP_DEPS
-ADD pom.xml $TEMP_DEPS
-WORKDIR $TEMP_DEPS
-RUN ["mvn","dependency:go-offline","--fail-never"]
-WORKDIR /home/jenkins
+
+ADD settings.xml $HOME
+ADD pom.xml $HOME
+RUN mvn verify --fail-never -s settings.xml
+RUN chmod -R a+rw /home/jenkins/.m2/
 
 # setup SSH server
 RUN apt-get update && apt-get install -y openssh-server
@@ -69,4 +68,4 @@ COPY setup-sshd /usr/local/bin/setup-sshd
 
 EXPOSE 22
 
-ENTRYPOINT ["setup-sshd"]i
+ENTRYPOINT ["setup-sshd"]

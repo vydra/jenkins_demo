@@ -1,3 +1,7 @@
 docker-plugin:0.16.2
 ssh-slaves:1.11
 durable-task:1.12
+docker-workflow:1.9
+docker-commons:1.5
+script-security:1.17
+authentication-tokens:1.1
